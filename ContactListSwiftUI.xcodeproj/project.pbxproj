@@ -11,6 +11,8 @@
 		748C22D5284D9631008DFCAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748C22D4284D9631008DFCAA /* ContentView.swift */; };
 		748C22D7284D9634008DFCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748C22D6284D9634008DFCAA /* Assets.xcassets */; };
 		748C22DA284D9634008DFCAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748C22D9284D9634008DFCAA /* Preview Assets.xcassets */; };
+		748C22E1284D9657008DFCAA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748C22E0284D9657008DFCAA /* DataManager.swift */; };
+		748C22E3284D96B4008DFCAA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748C22E2284D96B4008DFCAA /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		748C22D4284D9631008DFCAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		748C22D6284D9634008DFCAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748C22D9284D9634008DFCAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		748C22E0284D9657008DFCAA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		748C22E2284D96B4008DFCAA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		748C22D1284D9631008DFCAA /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				748C22D2284D9631008DFCAA /* ContactListSwiftUIApp.swift */,
-				748C22D4284D9631008DFCAA /* ContentView.swift */,
-				748C22D6284D9634008DFCAA /* Assets.xcassets */,
+				748C22E7284D96E5008DFCAA /* Views */,
+				748C22E5284D96C3008DFCAA /* Models */,
+				748C22E4284D96BB008DFCAA /* Services */,
+				748C22E6284D96D9008DFCAA /* App */,
 				748C22D8284D9634008DFCAA /* Preview Content */,
+				748C22E8284D96FA008DFCAA /* Resources */,
 			);
 			path = ContactListSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +71,46 @@
 				748C22D9284D9634008DFCAA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		748C22E4284D96BB008DFCAA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				748C22E0284D9657008DFCAA /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		748C22E5284D96C3008DFCAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				748C22E2284D96B4008DFCAA /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		748C22E6284D96D9008DFCAA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				748C22D2284D9631008DFCAA /* ContactListSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		748C22E7284D96E5008DFCAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				748C22D4284D9631008DFCAA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		748C22E8284D96FA008DFCAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				748C22D6284D9634008DFCAA /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				748C22D5284D9631008DFCAA /* ContentView.swift in Sources */,
+				748C22E1284D9657008DFCAA /* DataManager.swift in Sources */,
+				748C22E3284D96B4008DFCAA /* Person.swift in Sources */,
 				748C22D3284D9631008DFCAA /* ContactListSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
