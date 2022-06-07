@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var contactList = Person.getContactList()
+    private let contactList = Person.getContactList()
     
     var body: some View {
         NavigationView {
