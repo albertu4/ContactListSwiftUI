@@ -17,6 +17,7 @@ struct PersonImage: View {
             Image(systemName: image)
                 .resizable()
                 .frame(width: 200, height: 200)
+                .padding()
             
             Spacer()
         }
