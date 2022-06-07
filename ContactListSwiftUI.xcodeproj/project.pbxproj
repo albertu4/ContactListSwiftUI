@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740EC1F1284F388E00C2B1C5 /* PhoneAndMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740EC1F0284F388E00C2B1C5 /* PhoneAndMail.swift */; };
+		740EC1F3284F3A8400C2B1C5 /* PersonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740EC1F2284F3A8400C2B1C5 /* PersonImage.swift */; };
 		748C22D3284D9631008DFCAA /* ContactListSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748C22D2284D9631008DFCAA /* ContactListSwiftUIApp.swift */; };
 		748C22D5284D9631008DFCAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748C22D4284D9631008DFCAA /* ContentView.swift */; };
 		748C22D7284D9634008DFCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748C22D6284D9634008DFCAA /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740EC1F0284F388E00C2B1C5 /* PhoneAndMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAndMail.swift; sourceTree = "<group>"; };
+		740EC1F2284F3A8400C2B1C5 /* PersonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImage.swift; sourceTree = "<group>"; };
 		748C22CF284D9631008DFCAA /* ContactListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748C22D2284D9631008DFCAA /* ContactListSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListSwiftUIApp.swift; sourceTree = "<group>"; };
 		748C22D4284D9631008DFCAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				748C22E9284DDCF5008DFCAA /* ContactListView.swift */,
 				748C22EF284E0E5D008DFCAA /* ContactInfoView.swift */,
 				748C22EB284DDE21008DFCAA /* PhoneNumbersView.swift */,
+				740EC1F0284F388E00C2B1C5 /* PhoneAndMail.swift */,
+				740EC1F2284F3A8400C2B1C5 /* PersonImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 				748C22E1284D9657008DFCAA /* DataManager.swift in Sources */,
 				748C22E3284D96B4008DFCAA /* Person.swift in Sources */,
 				748C22D3284D9631008DFCAA /* ContactListSwiftUIApp.swift in Sources */,
+				740EC1F1284F388E00C2B1C5 /* PhoneAndMail.swift in Sources */,
 				748C22EC284DDE21008DFCAA /* PhoneNumbersView.swift in Sources */,
 				748C22EA284DDCF5008DFCAA /* ContactListView.swift in Sources */,
+				740EC1F3284F3A8400C2B1C5 /* PersonImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,17 +15,9 @@ struct PhoneNumbersView: View {
             ForEach(contactList, id: \.self) { contact in
                 Section(contact.fullName) {
                     
-                    HStack {
-                        Image(systemName: Contacts.phone.rawValue)
-                            .foregroundColor(.blue)
-                        Text(contact.phoneNumber)
-                    }
+                    PhoneAndMail(image: Contacts.phone.rawValue, phoneAndMail: contact.phoneNumber)
                     
-                    HStack {
-                        Image(systemName: Contacts.email.rawValue)
-                            .foregroundColor(.blue)
-                        Text(contact.email)
-                    }
+                    PhoneAndMail(image: Contacts.email.rawValue, phoneAndMail: contact.email)
                 }
             }
         }

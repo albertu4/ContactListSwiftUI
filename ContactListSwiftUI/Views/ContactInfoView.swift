@@ -13,27 +13,11 @@ struct ContactInfoView: View {
     var body: some View {
         
         List {
-            HStack {
-                Spacer()
-                
-                Image(systemName: Contacts.contact.rawValue)
-                .resizable()
-                .frame(width: 200, height: 200, alignment: .center)
-                
-                Spacer()
-            }
+            PersonImage(image: Contacts.contact.rawValue)
             
-            HStack {
-                Image(systemName: Contacts.phone.rawValue)
-                    .foregroundColor(.blue)
-                Text(contact.phoneNumber)
-            }
+            PhoneAndMail(image: Contacts.phone.rawValue, phoneAndMail: contact.phoneNumber)
             
-            HStack {
-                Image(systemName: Contacts.email.rawValue)
-                    .foregroundColor(.blue)
-                Text(contact.email)
-            }
+            PhoneAndMail(image: Contacts.email.rawValue, phoneAndMail: contact.email)
         }
         .listStyle(.grouped)
         .navigationTitle(contact.fullName)
