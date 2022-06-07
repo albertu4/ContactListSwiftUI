@@ -16,6 +16,7 @@ struct ContactListView: View {
                 Text(contact.fullName)
             }
         }
+        .listStyle(.inset)
     }
 }
 
