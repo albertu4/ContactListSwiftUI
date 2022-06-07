@@ -48,6 +48,7 @@ extension Person {
 
 enum Contacts: String {
     case contacts = "person.3.fill"
+    case contact = "person.fill"
     case phone = "phone"
     case email = "tray"
 }

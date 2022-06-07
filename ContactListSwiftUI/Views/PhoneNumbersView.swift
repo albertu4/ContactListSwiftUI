@@ -11,8 +11,23 @@ struct PhoneNumbersView: View {
     let contactList: [Person]
     
     var body: some View {
-        List(contactList, id: \.self) { contact in
-            Text(contact.fullName)
+        List {
+            ForEach(contactList, id: \.self) { contact in
+                Section(contact.fullName) {
+                    
+                    HStack {
+                        Image(systemName: Contacts.phone.rawValue)
+                            .foregroundColor(.blue)
+                        Text(contact.phoneNumber)
+                    }
+                    
+                    HStack {
+                        Image(systemName: Contacts.email.rawValue)
+                            .foregroundColor(.blue)
+                        Text(contact.email)
+                    }
+                }
+            }
         }
     }
 }
