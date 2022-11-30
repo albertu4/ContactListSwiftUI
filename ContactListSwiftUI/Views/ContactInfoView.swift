@@ -12,12 +12,11 @@ struct ContactInfoView: View {
     
     var body: some View {
         
-        List {
+        Form {
             PersonImage(image: Contacts.contact.rawValue)
             
-            PhoneAndMail(image: Contacts.phone.rawValue, phoneAndMail: contact.phoneNumber)
-            
-            PhoneAndMail(image: Contacts.email.rawValue, phoneAndMail: contact.email)
+            Label(contact.phoneNumber, systemImage: Contacts.phone.rawValue)
+            Label(contact.email, systemImage: Contacts.email.rawValue)
         }
         .listStyle(.grouped)
         .navigationTitle(contact.fullName)

@@ -12,21 +12,18 @@ struct ContentView: View {
     private let contactList = Person.getContactList()
     
     var body: some View {
-        NavigationView {
-            TabView {
-                ContactListView(contactList: contactList)
-                    .tabItem {
-                        Image(systemName: Contacts.contacts.rawValue)
-                        Text("Contacts")
-                    }
-                
-                PhoneNumbersView(contactList: contactList)
-                    .tabItem {
-                        Image(systemName: Contacts.phone.rawValue)
-                        Text("Phones")
-                    }
-            }
-            .navigationTitle("Contact List")
+        TabView {
+            ContactListView(contactList: contactList)
+                .tabItem {
+                    Image(systemName: Contacts.contacts.rawValue)
+                    Text("Contacts")
+                }
+            
+            PhoneNumbersView(contactList: contactList)
+                .tabItem {
+                    Image(systemName: Contacts.phone.rawValue)
+                    Text("Phones")
+                }
         }
     }
 }

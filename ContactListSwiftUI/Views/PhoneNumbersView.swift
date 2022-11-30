@@ -11,15 +11,19 @@ struct PhoneNumbersView: View {
     let contactList: [Person]
     
     var body: some View {
-        List {
-            ForEach(contactList, id: \.self) { contact in
-                Section(contact.fullName) {
-                    
-                    PhoneAndMail(image: Contacts.phone.rawValue, phoneAndMail: contact.phoneNumber)
-                    
-                    PhoneAndMail(image: Contacts.email.rawValue, phoneAndMail: contact.email)
+        NavigationView {
+            List {
+                ForEach(contactList, id: \.self) { contact in
+                    Section(contact.fullName) {
+                        
+                        Label(contact.phoneNumber, systemImage: Contacts.phone.rawValue)
+                        Label(contact.email, systemImage: Contacts.email.rawValue)
+                    }
+                    .textCase(.none)
                 }
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
     }
 }
